@@ -1,0 +1,46 @@
+name: ptc_workshop
+description: A new Flutter project.
+publish_to: "none"
+
+version: 1.0.0+1
+environment:
+  sdk: ">=2.16.2 <=3.2.3"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Packages
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.10+1
+  intl: ^0.17.0
+  smooth_page_indicator: ^1.1.0
+  flutter_bloc: ^8.1.6
+  iconly: ^1.0.1
+  flutter_rating_stars: ^1.1.0
+  google_fonts: 6.1.0
+
+  # Hijacking package inside the project
+  curved_labeled_navigation_bar:
+    path: './packages/curved_labeled_navigation_bar-2.0.2_hijacking/'
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+  
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svgs/
+    # - assets/fonts/
+
+# fonts:
+#   - family: Manrope
+#     fonts:
+#       - asset: assets/fonts/Manrope-Regular.ttf
+#         width: 400
